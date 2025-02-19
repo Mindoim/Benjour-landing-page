@@ -1,5 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One:regular&display=swap');
+
+:root{
+    --primary-background-color: hsl(271, 88%, 90%);
+    --second-background-color: hsl(60, 43%, 95%);
+
+    --display-logo-font-family: 'Bungee Shade';
+    --title-font-family: 'Bowlby One';
+    --paragraph-font-family: inter;
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-background-color);
+    height: 100vh;
+}
+
+p{
+    font-family: var(--display-logo-font-family);
+    font-size: 128px;
+    border: 1px solid red;
 }
