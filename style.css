@@ -1,13 +1,40 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade:regular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@400;700&display=swap');
 
-:root{
+:root {
+    /* Background Colors */
     --primary-background-color: hsl(271, 88%, 90%);
     --second-background-color: hsl(60, 43%, 95%);
 
-    --display-logo-font-family: 'Bungee Shade';
-    --title-font-family: 'Bowlby One';
-    --paragraph-font-family: inter;
+    /* Black Tones */
+    --black-100: hsl(0, 0%, 0%); /* Pure Black */
+    --black-200: hsl(0, 0%, 10%); /* Darkest Gray */
+    --black-300: hsl(0, 0%, 20%); /* Very Dark Gray */
+    --black-400: hsl(0, 0%, 30%); /* Dark Gray */
+    --black-500: hsl(0, 0%, 40%); /* Medium Dark Gray */
+    --black-600: hsl(0, 0%, 50%); /* Medium Gray */
+    --black-700: hsl(0, 0%, 60%); /* Light Gray */
+    --black-800: hsl(0, 0%, 80%); /* Very Light Gray */
+    --black-900: hsl(0, 0%, 95%); /* Nearly White */
+
+    /* Font Families */
+    --display-logo-font-family: 'Bungee Shade', cursive;
+    --title-font-family: 'Bowlby One', cursive;
+    --paragraph-font-family: 'Inter', sans-serif;
+
+    /* Font Sizes */
+    --font-size-display: 7.48em;     /* 119.67 ÷ 16 */
+    --font-size-h1: 5.60em;          /* 89.67 ÷ 16 */
+    --font-size-h2: 4.21em;          /* 67.34 ÷ 16 */
+    --font-size-h3: 3.16em;          /* 50.52 ÷ 16 */
+    --font-size-h4: 2.37em;          /* 37.9 ÷ 16 */
+    --font-size-h5: 1.78em;          /* 28.43 ÷ 16 */
+    --font-size-h6: 1.33em;          /* 21.33 ÷ 16 */
+    --font-size-paragraph: 1em;      /* 16 ÷ 16 */
+    --font-size-small: 0.75em;       /* 12 ÷ 16 */
+    --font-size-very-small: 0.56em;  /* 9 ÷ 16 */
+
 }
 
 * {
@@ -16,7 +43,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,8 +52,11 @@ body{
     height: 100vh;
 }
 
-p{
+.hero {
+    border: 1px solid green;
+}
+
+.titulo {
     font-family: var(--display-logo-font-family);
     font-size: 128px;
-    border: 1px solid red;
 }
