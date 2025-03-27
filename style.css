@@ -24,16 +24,16 @@
     --paragraph-font-family: 'Inter', sans-serif;
 
     /* Font Sizes */
-    --font-size-display: 7.48em;     /* 119.67 ÷ 16 */
-    --font-size-h1: 5.60em;          /* 89.67 ÷ 16 */
-    --font-size-h2: 4.21em;          /* 67.34 ÷ 16 */
-    --font-size-h3: 3.16em;          /* 50.52 ÷ 16 */
-    --font-size-h4: 2.37em;          /* 37.9 ÷ 16 */
-    --font-size-h5: 1.78em;          /* 28.43 ÷ 16 */
-    --font-size-h6: 1.33em;          /* 21.33 ÷ 16 */
-    --font-size-paragraph: 1em;      /* 16 ÷ 16 */
-    --font-size-small: 0.75em;       /* 12 ÷ 16 */
-    --font-size-very-small: 0.56em;  /* 9 ÷ 16 */
+    --font-size-display: 7.48em; /* 119.67 ÷ 16 */
+    --font-size-h1: 5.60em; /* 89.67 ÷ 16 */
+    --font-size-h2: 4.21em; /* 67.34 ÷ 16 */
+    --font-size-h3: 3.16em; /* 50.52 ÷ 16 */
+    --font-size-h4: 2.37em; /* 37.9 ÷ 16 */
+    --font-size-h5: 1.78em; /* 28.43 ÷ 16 */
+    --font-size-h6: 1.33em; /* 21.33 ÷ 16 */
+    --font-size-paragraph: 1em; /* 16 ÷ 16 */
+    --font-size-small: 0.75em; /* 12 ÷ 16 */
+    --font-size-very-small: 0.56em; /* 9 ÷ 16 */
 
 }
 
@@ -49,14 +49,66 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-background-color);
-    height: 100vh;
+    height: auto;
 }
+
+/*Início do hero*/
 
 .hero {
-    border: 1px solid green;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
 }
 
-.titulo {
-    font-family: var(--display-logo-font-family);
-    font-size: 128px;
+.hero-content {
+    width: auto;
+    height: auto;
+    min-width: 280px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55%;
 }
+
+.hero-titulo {
+    font-family: var(--display-logo-font-family), cursive;
+    font-size: clamp(30px, var(--font-size-h3), 4.5em);
+    text-transform: uppercase;
+    letter-spacing: 2.40px;
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px; /*stroke titulo */
+    line-height: 100%;
+    text-align: center;
+}
+
+.hero-subtitulo{
+    font-family: var(--paragraph-font-family);
+    font-size: var(--font-size-h5);
+    font-weight: 500;
+    line-height: 130%;
+    -webkit-text-stroke-width: 0.5px;
+    text-transform: capitalize;
+}
+
+/*
+.imagem-hero{
+    position: absolute;
+}
+
+#homem-negro-com-skate-e-toca{
+    min-width: clamp(150px, 35%, 800px);
+    min-height: clamp(200px, 50%, 800px);
+    bottom: 0px;
+    left: 0px;
+}
+
+#old-skool-skate{
+    background-size: 100px 100px;
+    bottom: 0;
+    right: 0;
+}
+*/
