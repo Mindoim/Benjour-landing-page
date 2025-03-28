@@ -60,7 +60,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .hero-content {
@@ -85,8 +85,8 @@ body {
     text-align: center;
 }
 
-.hero-subtitulo{
-    font-family: var(--paragraph-font-family);
+.hero-subtitulo {
+    font-family: var(--paragraph-font-family),"Inter Semi Bold";
     font-size: var(--font-size-h5);
     font-weight: 500;
     line-height: 130%;
@@ -94,21 +94,48 @@ body {
     text-transform: capitalize;
 }
 
-/*
-.imagem-hero{
+
+.container-imagem-hero {
     position: absolute;
 }
 
-#homem-negro-com-skate-e-toca{
-    min-width: clamp(150px, 35%, 800px);
-    min-height: clamp(200px, 50%, 800px);
-    bottom: 0px;
-    left: 0px;
+div img{
+    max-width: 100%;
+    height: auto;
 }
 
-#old-skool-skate{
-    background-size: 100px 100px;
+.container-homem-negro-com-skate-e-toca{
+    width: 200px;
+    bottom: -300px;
+    left: 0;
+}
+
+.container-old-skool-skate{
+    width: 250px;
     bottom: 0;
     right: 0;
 }
-*/
+
+.container-crianca-japonesa{
+    width: 200px;
+    bottom: -400px;
+    right: 0;
+}
+
+.container-homem-na-pista-de-skate{
+    width: 200px;
+    bottom: -600px;
+}
+
+.container-mulher-pousando-para-a-foto-com-skate{
+    width: 150px;
+    bottom: -500px;
+    right: auto;
+    left: auto;
+}
+
+.container-jovens-com-skate{
+    width: 250px;
+    bottom: -500px;
+    left: 0;
+}
