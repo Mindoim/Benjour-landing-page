@@ -35,6 +35,13 @@
     --font-size-small: 0.75em; /* 12 ÷ 16 */
     --font-size-very-small: 0.56em; /* 9 ÷ 16 */
 
+    /*Valores para Animações
+
+    Futuramente, ao aprender assincronismo, volta aqui e conserta essa gambiarra que você fez por não saber usar promises ainda, mas se funciona tá valendo
+
+    */
+    --valor-posicao-inicial: 0;
+    --valor-posicao-final: 0;
 }
 
 * {
@@ -50,6 +57,7 @@ body {
     align-items: center;
     background-color: var(--primary-background-color);
     height: auto;
+    overflow: hidden;
 }
 
 /*Início do hero*/
@@ -86,7 +94,7 @@ body {
 }
 
 .hero-subtitulo {
-    font-family: var(--paragraph-font-family),"Inter Semi Bold";
+    font-family: var(--paragraph-font-family), "Inter Semi Bold";
     font-size: var(--font-size-h5);
     font-weight: 500;
     line-height: 130%;
@@ -94,48 +102,153 @@ body {
     text-transform: capitalize;
 }
 
-
 .container-imagem-hero {
     position: absolute;
 }
 
-div img{
+div img {
     max-width: 100%;
     height: auto;
 }
 
-.container-homem-negro-com-skate-e-toca{
+.container-homem-negro-com-skate-e-toca {
     width: 200px;
     bottom: -300px;
     left: 0;
 }
 
-.container-old-skool-skate{
+.animacaoMovendoFotoDoHomemNegro {
+    animation: movingHomemNegro 2.5s ease-in forwards;
+}
+
+@keyframes movingHomemNegro {
+    0% {
+        left: 0;
+        bottom: -300px;
+    }
+    99% {
+        bottom: 1000px;
+    }
+    100% {
+        bottom: 1000px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-old-skool-skate {
     width: 250px;
     bottom: 0;
     right: 0;
 }
 
-.container-crianca-japonesa{
+.animacaoMovendoFotoDoOldSkool {
+    animation: movingOldSkool 4s ease-in forwards;
+}
+
+@keyframes movingOldSkool {
+    0% {
+        bottom: -500px;
+    }
+    99% {
+        bottom: 1000px;
+    }
+    100% {
+        bottom: 1500px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-crianca-japonesa {
     width: 200px;
     bottom: -400px;
     right: 0;
 }
 
-.container-homem-na-pista-de-skate{
-    width: 200px;
-    bottom: -600px;
+.animacaoMovendoFotoDaCriancaJaponesa {
+    animation: movingCriancaJaponesa 3.8s ease-in forwards;
 }
 
-.container-mulher-pousando-para-a-foto-com-skate{
+@keyframes movingCriancaJaponesa {
+    0% {
+        bottom: -500px;
+    }
+    99% {
+        bottom: 1500px;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-homem-na-pista-de-skate {
+    width: 200px;
+    bottom: -600px;
+    right: 0;
+}
+
+.animacaoMovendoFotoDoHomemNaPistaDeSkate {
+    animation: movingHomemPista 7s ease forwards;
+}
+
+@keyframes movingHomemPista {
+    0% {
+        bottom: -2000px;
+    }
+    99% {
+        bottom: 1000px;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-mulher-pousando-para-a-foto-com-skate {
     width: 150px;
     bottom: -500px;
     right: auto;
-    left: auto;
+    left: 0;
 }
 
-.container-jovens-com-skate{
+.animacaoMovendoFotoDaMulher {
+    animation: movingMulher 7.6s ease forwards;
+}
+
+@keyframes movingMulher {
+    0% {
+        bottom: -1700px;
+    }
+    99% {
+        bottom: 1000px;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container-jovens-com-skate {
     width: 250px;
-    bottom: -500px;
+    bottom: -1500px;
     left: 0;
+}
+
+.animacaoMovendoFotoDosJovensNaPistaDeSkate {
+    animation: movingJovens 5.6s ease forwards;
+}
+
+@keyframes movingJovens {
+    0% {
+        bottom: -1500px;
+    }
+    99% {
+        bottom: 1000px;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
