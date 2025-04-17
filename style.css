@@ -55,14 +55,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary-background-color);
     height: auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*Início do hero*/
 
 .hero {
+    background-color: var(--primary-background-color);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -251,4 +251,334 @@ div img {
         opacity: 0;
         visibility: hidden;
     }
+}
+
+/*Fim hero*/
+
+/*Começo Produtos*/
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 32px;
+    margin: 20px 0;
+
+}
+
+.item-produtos {
+    border: 1px solid black;
+    width: 90%;
+    padding: 0 2rem;
+    height: 75vh;
+    background-color: var(--second-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+
+.imagem1 {
+    width: 100%;
+    height: 265px;
+    background: url("./resources/imgs/Cards/menino-com-skate-na-mao.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin-top: 32px;
+}
+
+.titulo-card {
+    margin-top: 16px;
+}
+
+.titulo-card h3 {
+    font-family: var(--title-font-family);
+    font-size: var(--font-size-h5);
+    text-transform: uppercase;
+}
+
+.titulo-card p {
+    text-transform: uppercase;
+    display: inline-flex;
+    font-family: var(--title-font-family);
+    font-size: 14px;
+    background-color: var(--primary-background-color);
+    padding: 1px 5px;
+    border-radius: 20px;
+}
+
+.descricao-card {
+    width: 100%;
+    font-family: var(--paragraph-font-family);
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
+    margin-top: 12px;
+}
+
+button {
+    background-color: var(--second-background-color);
+    font-family: var(--paragraph-font-family);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 4px 24px;
+    font-weight: bolder;
+    -webkit-text-stroke: 0.2px black;
+    margin-top: 12px;
+}
+
+#produto-1 {
+    margin-top: 32px;
+    box-shadow: 430px 1225px 250px 0px rgba(184, 6, 234, 0.00), 275px 784px 250px 0px rgba(184, 6, 234, 0.02), 155px 441px 250px 0px rgba(184, 6, 234, 0.06), 69px 196px 208px 0px rgba(184, 6, 234, 0.10), 17px 49px 114px 0px rgba(184, 6, 234, 0.12);
+}
+
+#produto-2 {
+    box-shadow: -2079px 2688px 250px 0px rgba(143, 32, 254, 0.00), -1331px 1720px 250px 0px rgba(143, 32, 254, 0.03), -748px 968px 250px 0px rgba(143, 32, 254, 0.10), -333px 430px 250px 0px rgba(143, 32, 254, 0.16), -83px 108px 250px 0px rgba(143, 32, 254, 0.19);
+}
+
+.imagem2 {
+    width: 100%;
+    height: 265px;
+    background: url("./resources/imgs/Cards/menino fazendo manobra .jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin-top: 32px;
+}
+
+.imagem3 {
+    width: 100%;
+    height: 265px;
+    background: url("./resources/imgs/Cards/mulher e skater.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin-top: 32px;
+}
+
+.imagem4 {
+    width: 100%;
+    height: 265px;
+    background: url("./resources/imgs/Cards/manobra em preto e branco.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    margin-top: 32px;
+}
+
+/*Fim produtos
+
+Começo Marketing1*/
+
+.marketing1 {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase {
+    color: white;
+    font-family: var(--title-font-family);
+    font-size: var(--font-size-h3);
+    line-height: 125%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.gif {
+    height: 15vh;
+    width: auto;
+    /*border: 1px solid red;*/
+    background-size: cover;
+}
+
+#gifskate {
+    background: url("./resources/imgs/Marketing/flor.gif");
+    background-size: contain;
+    width: auto;
+    height: 80%;
+}
+
+.gifAbsolute {
+    position: relative;
+    width: 35vw;
+}
+
+#coracao {
+    top: -30px;
+    left: 10px;
+}
+
+#estrelas {
+    top: -150px;
+    right: -120px;
+}
+
+/* Começo marketing 2*/
+
+.marketing2 {
+    height: 100vh;
+    background-color: var(--second-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    max-width: 100vh;
+}
+
+#novoNormal {
+    font-size: var(--font-size-h6);
+    font-family: var(--title-font-family);
+    padding: 0 0.4em;
+    background-color: var(--primary-background-color);
+    border-radius: 20px;
+    margin: 4em;
+}
+
+#textoSkate {
+    font-size: var(--font-size-h5);
+    font-family: var(--title-font-family);
+    text-align: center;
+    width: 110%;
+    white-space: wrap;
+    margin-bottom: 3em;
+}
+
+#cachorro {
+    width: 80%;
+    height: 35%;
+
+}
+
+#imagemDoCachorro {
+    background: url("./resources/imgs/Marketing/cachorro e skate.gif");
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/*fim marketing 2*/
+
+/*Começo do opiniões*/
+
+.opinioes {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opinioes h2 {
+    font-family: var(--title-font-family);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--font-size-h4) - 5px);
+    color: white;
+    margin-top: 5rem;
+    line-height: 110%
+}
+
+.containerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skateRolando{
+    margin-top: 5rem;
+}
+
+.containerCard{
+    width: 80vw;
+    height: 35vh;
+    border: 4px solid white;
+    margin-top: 5rem;
+}
+
+.imagemUsuario img {
+    border-radius: 100px;
+}
+
+.dadosUsuario h5 {
+    font-family: var(--title-font-family);
+    font-size: var(--font-size-paragraph);
+    font-weight: lighter;
+    color: white;
+}
+
+.dadosUsuario p{
+    font-family: var(--title-font-family);
+    font-size: calc(var(--font-size-paragraph) - 5px);
+    background-color: #AE70EA;
+    display: inline;
+    padding: 1px 6px;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 20px;
+}
+
+
+/*Começo footer*/
+
+footer {
+    height: 35vh;
+    width: 100vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parte-roxa {
+    border-bottom: 2px solid black;
+    height: 60%;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-benjor-texto {
+    font-family: var(--display-logo-font-family);
+    font-size: var(--font-size-h6);
+    -webkit-text-stroke: 0.1px black;
+    margin-bottom: 10px;
+}
+
+#container-redes-sociais {
+    width: 50%;
+    height: 30px;
+    background-color: white;
+}
+
+.item-redes-sociais {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 20px;
 }
