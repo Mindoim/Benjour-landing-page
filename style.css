@@ -502,15 +502,14 @@ Começo Marketing1*/
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#skateRolando{
-    margin-top: 5rem;
-}
-
-.containerCard{
     width: 80vw;
     height: 35vh;
     border: 4px solid white;
+    margin-top: 5rem;
+    gap: 32px;
+    text-align: justify-all;
+}
+#skateRolando{
     margin-top: 5rem;
 }
 
@@ -520,7 +519,7 @@ Começo Marketing1*/
 
 .dadosUsuario h5 {
     font-family: var(--title-font-family);
-    font-size: var(--font-size-paragraph);
+    font-size: calc(var(--font-size-paragraph) + 5px);
     font-weight: lighter;
     color: white;
 }
@@ -530,10 +529,51 @@ Começo Marketing1*/
     font-size: calc(var(--font-size-paragraph) - 5px);
     background-color: #AE70EA;
     display: inline;
-    padding: 1px 6px;
+    padding: 0.5px 6px;
     text-align: center;
     font-weight: lighter;
     border-radius: 20px;
+}
+
+#redes-sociais-usuarios{
+    position: relative;
+    bottom: 5px;
+}
+
+.usuarioOpiniao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+#estrelas-opinioes{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.avaliacoes{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5em
+}
+
+#nota{
+    color: white;
+    font-size: 16px;
+    line-height: 100%;
+    background-color: black;
+}
+.descricaoOpiniao{
+    overflow-y: hidden;
+    color: white;
+    font-family: var(--paragraph-font-family);
+    width: 85%;
+    height: 35%;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 140%;
 }
 
 
