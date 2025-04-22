@@ -498,7 +498,22 @@ Começo Marketing1*/
     line-height: 110%
 }
 
-.containerCard{
+/*.containerCarroseul{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}*/
+
+/*.carroselConteudo{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}*/
+
+.containerCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,7 +524,8 @@ Começo Marketing1*/
     gap: 32px;
     text-align: justify-all;
 }
-#skateRolando{
+
+#skateRolando {
     margin-top: 5rem;
 }
 
@@ -524,7 +540,7 @@ Começo Marketing1*/
     color: white;
 }
 
-.dadosUsuario p{
+.dadosUsuario p {
     font-family: var(--title-font-family);
     font-size: calc(var(--font-size-paragraph) - 5px);
     background-color: #AE70EA;
@@ -535,7 +551,7 @@ Começo Marketing1*/
     border-radius: 20px;
 }
 
-#redes-sociais-usuarios{
+#redes-sociais-usuarios {
     position: relative;
     bottom: 5px;
 }
@@ -548,24 +564,25 @@ Começo Marketing1*/
     margin-top: 24px;
 }
 
-#estrelas-opinioes{
+#estrelas-opinioes {
     display: flex;
     gap: 0.5rem;
 }
 
-.avaliacoes{
+.avaliacoes {
     display: flex;
     gap: 0.5rem;
     margin-top: 0.5em
 }
 
-#nota{
+#nota {
     color: white;
     font-size: 16px;
     line-height: 100%;
     background-color: black;
 }
-.descricaoOpiniao{
+
+.descricaoOpiniao {
     overflow-y: hidden;
     color: white;
     font-family: var(--paragraph-font-family);
@@ -580,7 +597,7 @@ Começo Marketing1*/
 /*Começo footer*/
 
 footer {
-    height: 35vh;
+    height: 25vh;
     width: 100vw;
     border: 2px solid black;
     display: flex;
@@ -590,7 +607,7 @@ footer {
 
 .parte-roxa {
     border-bottom: 2px solid black;
-    height: 60%;
+    height: 70%;
     width: 100%;
     background-color: var(--primary-background-color);
     display: flex;
@@ -601,24 +618,50 @@ footer {
 
 #footer-benjor-texto {
     font-family: var(--display-logo-font-family);
-    font-size: var(--font-size-h6);
+    font-size: calc(var(--font-size-h6) + 4px);
     -webkit-text-stroke: 0.1px black;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 #container-redes-sociais {
     width: 50%;
     height: 30px;
-    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .item-redes-sociais {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.footer-parte-branca{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 20px;
+    gap: 16px;
+    border: 1px solid red;
+}
+
+#footer-parteBranca-termos {
+    font-size: 8px;
+    font-family: var(--paragraph-font-family);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    word-spacing: -1px;
+    align-items: center;
+    font-weight: 500;
+}
+
+#footer-parteBranca-copyright{
+    font-size: 8px;
+    color: dimgrey;
 }
