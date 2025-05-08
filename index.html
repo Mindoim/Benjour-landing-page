@@ -8,190 +8,395 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="hero">
-    <div class="hero-content">
-        <div class="hero-titulo">BENJOR</div>
-        <div class="hero-subtitulo"><sub>skate todo dia</sub></div>
+<header class="hero">
+    <div class="hero__content">
+        <h1 class="hero__title">BENJOR</h1>
+        <div class="hero__subtitle"><sub>skate todo dia</sub></div>
     </div>
     
-    <div class="container-imagem-hero container-homem-negro-com-skate-e-toca">
+    <div class="hero__image-container hero__image-container--man-with-beanie">
         <img src="resources/imgs/hero/homem-negro-com-skate-e-touca.jpg"
-             alt="Homem neg     ro com uma touca"
-             id="foto-homem-negro-com-skate-e-toca">
+             alt="Homem negro com uma touca"
+             class="hero__image">
     </div>
     
-    <div class="container-imagem-hero container-old-skool-skate">
+    <div class="hero__image-container hero__image-container--old-school">
         <img src="resources/imgs/hero/old-skool-skate.jpg"
              alt="Foto de um skate e uma pessoa em cima mostrando apenas o tênis"
-             id="foto-old-skool-skate">
+             class="hero__image">
     </div>
     
-    <div class="container-imagem-hero container-crianca-japonesa">
+    <div class="hero__image-container hero__image-container--japanese-kid">
         <img src="resources/imgs/hero/crianca-japonesa.jpg"
              alt="Criança japonesa com roupas de skate"
-             id="foto-crianca-japonesa">
+             class="hero__image">
     </div>
     
-    <div class="container-imagem-hero container-homem-na-pista-de-skate">
+    <div class="hero__image-container hero__image-container--man-at-park">
         <img src="resources/imgs/hero/homem-na-pista-de-skate.jpg"
              alt="Homem de jaqueta jeans e cabelos longos na pista de skate"
-             id="foto-homem-na-pista-de-skate">
+             class="hero__image">
     </div>
     
-    <div class="container-imagem-hero container-mulher-pousando-para-a-foto-com-skate">
+    <div class="hero__image-container hero__image-container--woman-posing">
         <img src="resources/imgs/hero/mulher-pousando-para-a-foto-com-skate.jpg"
-             alt=""
-             id="foto-mulher-pousando-para-a-foto-com-skate.jpg">
+             alt="Mulher posando para foto com skate"
+             class="hero__image">
     </div>
     
-    <div class="container-imagem-hero container-jovens-com-skate">
+    <div class="hero__image-container hero__image-container--youth-group">
         <img src="resources/imgs/hero/jovens-com-skate.jpg"
              alt="3 jovens na pista de skate"
-             id="foto-jovens-com-skate">
+             class="hero__image">
     </div>
+</header>
 
-</div>
-
-<div class="produtos">
-    <div class="item-produtos" id="produto-1">
-        <div class="imagem-card imagem1 imagem1" id="imagem-card imagem1-1"></div>
-        <div class="titulo-card">
+<section class="products">
+    <div class="products__item" id="product-1">
+        <div class="products__image products__image--1"></div>
+        <div class="products__title">
             <h3>New Normal</h3>
             <p>new normal</p>
         </div>
-        <div class="descricao-card">
+        <div class="products__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam architecto deserunt dolor nisi
             reprehenderit sint tempore!
         </div>
-        <button class="botao-produto">Confira</button>
+        <button class="products__button">Confira</button>
     </div>
     
-    <div class="item-produtos" id="produto-2">
-        <div class="imagem-card imagem2"></div>
-        <div class="titulo-card">
+    <div class="products__item" id="product-2">
+        <div class="products__image products__image--2"></div>
+        <div class="products__title">
             <h3>New Normal</h3>
             <p>new normal</p>
         </div>
-        <div class="descricao-card">
+        <div class="products__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam architecto deserunt dolor nisi
             reprehenderit sint tempore!
         </div>
-        <button class="botao-produto">Confira</button>
+        <button class="products__button">Confira</button>
     </div>
     
-    <div class="item-produtos" id="produto-3">
-        <div class="imagem-card imagem3"></div>
-        <div class="titulo-card">
+    <div class="products__item" id="product-3">
+        <div class="products__image products__image--3"></div>
+        <div class="products__title">
             <h3>New Normal</h3>
             <p>new normal</p>
         </div>
-        <div class="descricao-card">
+        <div class="products__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam architecto deserunt dolor nisi
             reprehenderit sint tempore!
         </div>
-        <button class="botao-produto">Confira</button>
+        <button class="products__button">Confira</button>
     </div>
     
-    <div class="item-produtos" id="produto-4">
-        <div class="imagem-card imagem4"></div>
-        <div class="titulo-card">
+    <div class="products__item" id="product-4">
+        <div class="products__image products__image--4"></div>
+        <div class="products__title">
             <h3>New Normal</h3>
             <p>new normal</p>
         </div>
-        <div class="descricao-card">
+        <div class="products__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam architecto deserunt dolor nisi
             reprehenderit sint tempore!
         </div>
-        <button class="botao-produto">Confira</button>
+        <button class="products__button">Confira</button>
     </div>
-</div>
+</section>
 
-<div class="marketing1">
-    <div class="fraseEGif">
-        <img src="resources/imgs/Marketing/coracoes.gif" alt="" class="gifAbsolute" id="coracao">
-        <img src="resources/imgs/Marketing/estrelas.gif" alt="" class="gifAbsolute" id="estrelas">
-        <div class="frase">TODO DIA É DIA DE ANDAR DE SKATE!</div>
-        <div class="gif">
-            <div id="gifskate"></div>
+<section class="marketing marketing--first">
+    <div class="marketing__content">
+        <img src="resources/imgs/Marketing/coracoes.gif" alt="Corações animados" class="marketing__gif marketing__gif--hearts">
+        <img src="resources/imgs/Marketing/estrelas.gif" alt="Estrelas animadas" class="marketing__gif marketing__gif--stars">
+        <div class="marketing__phrase">TODO DIA É DIA DE ANDAR DE SKATE!</div>
+        <div class="marketing__animation">
+            <div class="marketing__skate-gif"></div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="marketing2">
-    <div id="novoNormal">NEW NORMAL</div>
-    <div id="textoSkate">SKATE SKATE SKATE SKATE SKATE SKATE SKATE SKATE SKATE</div>
-    <div id="cachorro">
-        <div id="imagemDoCachorro"></div>
+<section class="marketing marketing--second">
+    <div class="marketing__new-normal">NEW NORMAL</div>
+    <div class="marketing__skate-text">SKATE SKATE SKATE SKATE SKATE SKATE SKATE SKATE SKATE</div>
+    <div class="marketing__dog">
+        <div class="marketing__dog-image"></div>
     </div>
-</div>
+</section>
 
-<div class="opinioes">
-    <h2>O que eles <br>
-        pensam</h2>
+<section class="testimonials">
+    <h2 class="testimonials__heading">O que eles <br>pensam</h2>
     
-    <div id="skateRolando"><img src="" alt=""><img
-            src="resources/imgs/opinioes/Rainbow Skate Sticker by Free & Easy.gif" height="120"
-            width="200"/>
+    <div class="testimonials__animation">
+        <img src="resources/imgs/opinioes/Rainbow Skate Sticker by Free & Easy.gif"
+             alt="Skate animado"
+             height="120"
+             width="200"/>
     </div>
     
-    <div class="containerCarroseul">
-        <div class="containerCard">
-            <div class="usuarioOpiniao">
-                <div class="imagemUsuario"><img src="" alt=""><img src="resources/imgs/opinioes/homembispo.png" height="80" width="80"/></div>
-                <div class="dadosUsuario">
-                    <h5>Gabriel Bispo</h5>
-                    <p id="redes-sociais-usuarios">@bisparel</p>
-                                    <div class="avaliacoes">
-                        <p id="nota">5.0</p>
-                        <div id="estrelas-opinioes">
-                            <div
-                                    class=""><img src="resources/imgs/opinioes/estrela.svg" height="16px"
-                                                  width="16px"></div>
-                            <div
-                                    class=""><img src="resources/imgs/opinioes/estrela.svg" height="16px"
-                                                  width="16px"></div>
-                            <div
-                                    class=""><img src="resources/imgs/opinioes/estrela.svg" height="16px"
-                                                  width="16px"></div>
-                            <div
-                                    class=""><img src="resources/imgs/opinioes/estrela.svg" height="16px"
-                                                  width="16px"></div>
-                            <div
-                                    class=""><img src="resources/imgs/opinioes/estrela.svg" height="16px"
-                                                  width="16px"></div>
-                        
+    <div class="testimonials__carousel">
+        <div class="testimonials__slide">
+            
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
             </div>
-            <div class="descricaoOpiniao">
-                Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
             
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
             </div>
-        </div>
-    </div>
-</div>
+           
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
 
-<footer>
-    <div class="parte-roxa">
-        <div id="footer-benjor-texto">BENJOR</div>
-        <div id="container-redes-sociais">
-            <div class="item-redes-sociais"></div>
-            <div class="item-redes-sociais"></div>
-            <div class="item-redes-sociais"></div>
-            <div class="item-redes-sociais"></div>
-            <div class="item-redes-sociais"></div>
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
+            
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
+            
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
+            
+            
+            
+            
         </div>
     </div>
-    <div class="footer-parte-branca">
-        <div id="footer-parteBranca-termos">
+</section>
+
+<footer class="footer">
+    <div class="footer__purple-section">
+        <div class="footer__logo">BENJOR</div>
+        <div class="footer__social">
+            <div class="footer__social-item"></div>
+            <div class="footer__social-item"></div>
+            <div class="footer__social-item"></div>
+            <div class="footer__social-item"></div>
+            <div class="footer__social-item"></div>
+        </div>
+    </div>
+    <div class="footer__white-section">
+        <div class="footer__links">
             <p>Politica de privacidade</p>
             <p>Termos de uso</p>
             <p>Vendas e Fundos</p>
             <p>Legal</p>
             <p>Site Map</p>
         </div>
-        <div id="footer-parteBranca-copyright">
+        <div class="footer__copyright">
             © 2025 All Rights Reserved
         </div>
     </div>

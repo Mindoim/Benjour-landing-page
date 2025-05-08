@@ -1,7 +1,9 @@
+/* ========== Importações de Fontes ========== */
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade:regular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One:regular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter:wght@400;700&display=swap');
 
+/* ========== Variáveis ========== */
 :root {
     /* Background Colors */
     --primary-background-color: hsl(271, 88%, 90%);
@@ -36,14 +38,13 @@
     --font-size-very-small: 0.56em; /* 9 ÷ 16 */
 
     /*Valores para Animações
-
     Futuramente, ao aprender assincronismo, volta aqui e conserta essa gambiarra que você fez por não saber usar promises ainda, mas se funciona tá valendo
-
     */
     --valor-posicao-inicial: 0;
     --valor-posicao-final: 0;
 }
 
+/* ========== Reset e estilos globais ========== */
 * {
     margin: 0;
     padding: 0;
@@ -56,11 +57,11 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100vw;
 }
 
-/*Início do hero*/
-
+/* ========== Header/Hero ========== */
 .hero {
     background-color: var(--primary-background-color);
     height: 100vh;
@@ -71,7 +72,7 @@ body {
     overflow: hidden;
 }
 
-.hero-content {
+.hero__content {
     width: auto;
     height: auto;
     min-width: 280px;
@@ -82,7 +83,7 @@ body {
     margin-bottom: 55%;
 }
 
-.hero-titulo {
+.hero__title {
     font-family: var(--display-logo-font-family), cursive;
     font-size: clamp(30px, var(--font-size-h3), 4.5em);
     text-transform: uppercase;
@@ -93,7 +94,7 @@ body {
     text-align: center;
 }
 
-.hero-subtitulo {
+.hero__subtitle {
     font-family: var(--paragraph-font-family), "Inter Semi Bold";
     font-size: var(--font-size-h5);
     font-weight: 500;
@@ -102,7 +103,7 @@ body {
     text-transform: capitalize;
 }
 
-.container-imagem-hero {
+.hero__image-container {
     position: absolute;
 }
 
@@ -111,7 +112,7 @@ div img {
     height: auto;
 }
 
-.container-homem-negro-com-skate-e-toca {
+.hero__image-container--man-with-beanie {
     width: 200px;
     bottom: -300px;
     left: 0;
@@ -136,7 +137,7 @@ div img {
     }
 }
 
-.container-old-skool-skate {
+.hero__image-container--old-school {
     width: 250px;
     bottom: 0;
     right: 0;
@@ -160,7 +161,7 @@ div img {
     }
 }
 
-.container-crianca-japonesa {
+.hero__image-container--japanese-kid {
     width: 200px;
     bottom: -400px;
     right: 0;
@@ -183,7 +184,7 @@ div img {
     }
 }
 
-.container-homem-na-pista-de-skate {
+.hero__image-container--man-at-park {
     width: 200px;
     bottom: -600px;
     right: 0;
@@ -206,7 +207,7 @@ div img {
     }
 }
 
-.container-mulher-pousando-para-a-foto-com-skate {
+.hero__image-container--woman-posing {
     width: 150px;
     bottom: -500px;
     right: auto;
@@ -230,7 +231,7 @@ div img {
     }
 }
 
-.container-jovens-com-skate {
+.hero__image-container--youth-group {
     width: 250px;
     bottom: -1500px;
     left: 0;
@@ -253,11 +254,8 @@ div img {
     }
 }
 
-/*Fim hero*/
-
-/*Começo Produtos*/
-
-.produtos {
+/* ========== Produtos ========== */
+.products {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -266,10 +264,9 @@ div img {
     height: auto;
     gap: 32px;
     margin: 20px 0;
-
 }
 
-.item-produtos {
+.products__item {
     border: 1px solid black;
     width: 90%;
     padding: 0 2rem;
@@ -280,32 +277,46 @@ div img {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
-
 }
 
-
-.imagem1 {
+.products__image {
     width: 100%;
     height: 265px;
-    background: url("./resources/imgs/Cards/menino-com-skate-na-mao.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 3px;
     margin-top: 32px;
 }
 
-.titulo-card {
+.products__image--1 {
+    background: url("./resources/imgs/Cards/menino-com-skate-na-mao.jpg");
+    background-position: bottom;
+}
+
+.products__image--2 {
+    background: url("./resources/imgs/Cards/menino fazendo manobra .jpg");
+}
+
+.products__image--3 {
+    background: url("./resources/imgs/Cards/mulher e skater.jpg");
+}
+
+.products__image--4 {
+    background: url("./resources/imgs/Cards/manobra em preto e branco.jpg");
+}
+
+.products__title {
     margin-top: 16px;
 }
 
-.titulo-card h3 {
+.products__title h3 {
     font-family: var(--title-font-family);
     font-size: var(--font-size-h5);
     text-transform: uppercase;
 }
 
-.titulo-card p {
+.products__title p {
     text-transform: uppercase;
     display: inline-flex;
     font-family: var(--title-font-family);
@@ -315,7 +326,7 @@ div img {
     border-radius: 20px;
 }
 
-.descricao-card {
+.products__description {
     width: 100%;
     font-family: var(--paragraph-font-family);
     font-size: 16px;
@@ -324,7 +335,7 @@ div img {
     margin-top: 12px;
 }
 
-button {
+.products__button {
     background-color: var(--second-background-color);
     font-family: var(--paragraph-font-family);
     border: 1px solid black;
@@ -335,53 +346,17 @@ button {
     margin-top: 12px;
 }
 
-#produto-1 {
+#product-1 {
     margin-top: 32px;
     box-shadow: 430px 1225px 250px 0px rgba(184, 6, 234, 0.00), 275px 784px 250px 0px rgba(184, 6, 234, 0.02), 155px 441px 250px 0px rgba(184, 6, 234, 0.06), 69px 196px 208px 0px rgba(184, 6, 234, 0.10), 17px 49px 114px 0px rgba(184, 6, 234, 0.12);
 }
 
-#produto-2 {
+#product-2 {
     box-shadow: -2079px 2688px 250px 0px rgba(143, 32, 254, 0.00), -1331px 1720px 250px 0px rgba(143, 32, 254, 0.03), -748px 968px 250px 0px rgba(143, 32, 254, 0.10), -333px 430px 250px 0px rgba(143, 32, 254, 0.16), -83px 108px 250px 0px rgba(143, 32, 254, 0.19);
 }
 
-.imagem2 {
-    width: 100%;
-    height: 265px;
-    background: url("./resources/imgs/Cards/menino fazendo manobra .jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    margin-top: 32px;
-}
-
-.imagem3 {
-    width: 100%;
-    height: 265px;
-    background: url("./resources/imgs/Cards/mulher e skater.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    margin-top: 32px;
-}
-
-.imagem4 {
-    width: 100%;
-    height: 265px;
-    background: url("./resources/imgs/Cards/manobra em preto e branco.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3px;
-    margin-top: 32px;
-}
-
-/*Fim produtos
-
-Começo Marketing1*/
-
-.marketing1 {
+/* ========== Marketing ========== */
+.marketing--first {
     height: 100vh;
     width: 100%;
     background-color: var(--primary-background-color);
@@ -389,50 +364,56 @@ Começo Marketing1*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
-.frase {
+.marketing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketing__phrase {
     color: white;
     font-family: var(--title-font-family);
     font-size: var(--font-size-h3);
     line-height: 125%;
-    /*border: 1px solid red;*/
     text-align: center;
     margin-bottom: 60px;
 }
 
-.gif {
+.marketing__animation {
     height: 15vh;
     width: auto;
-    /*border: 1px solid red;*/
     background-size: cover;
 }
 
-#gifskate {
+.marketing__skate-gif {
     background: url("./resources/imgs/Marketing/flor.gif");
     background-size: contain;
     width: auto;
     height: 80%;
 }
 
-.gifAbsolute {
+.marketing__gif {
     position: relative;
     width: 35vw;
 }
 
-#coracao {
+.marketing__gif--hearts {
     top: -30px;
     left: 10px;
 }
 
-#estrelas {
+.marketing__gif--stars {
     top: -150px;
     right: -120px;
 }
 
-/* Começo marketing 2*/
 
-.marketing2 {
+/* ========== Marketing 2 ========== */
+
+.marketing--second {
     height: 100vh;
     background-color: var(--second-background-color);
     display: flex;
@@ -443,7 +424,7 @@ Começo Marketing1*/
     max-width: 100vh;
 }
 
-#novoNormal {
+.marketing__new-normal {
     font-size: var(--font-size-h6);
     font-family: var(--title-font-family);
     padding: 0 0.4em;
@@ -452,7 +433,7 @@ Começo Marketing1*/
     margin: 4em;
 }
 
-#textoSkate {
+.marketing__skate-text {
     font-size: var(--font-size-h5);
     font-family: var(--title-font-family);
     text-align: center;
@@ -461,13 +442,12 @@ Começo Marketing1*/
     margin-bottom: 3em;
 }
 
-#cachorro {
+.marketing__dog {
     width: 80%;
     height: 35%;
-
 }
 
-#imagemDoCachorro {
+.marketing__dog-image {
     background: url("./resources/imgs/Marketing/cachorro e skate.gif");
     width: auto;
     height: 100%;
@@ -475,20 +455,22 @@ Começo Marketing1*/
     background-position: center;
 }
 
-/*fim marketing 2*/
+/* ========== Testimonials ========== */
 
-/*Começo do opiniões*/
-
-.opinioes {
+.testimonials {
     height: 100vh;
     width: 100vw;
+    max-width: 100vw;
     background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.opinioes h2 {
+.testimonials__heading {
     font-family: var(--title-font-family);
     text-transform: uppercase;
     text-align: center;
@@ -498,22 +480,27 @@ Começo Marketing1*/
     line-height: 110%
 }
 
-/*.containerCarroseul{
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}*/
+.testimonials__animation {
+    margin-top: 5rem;
+}
 
-/*.carroselConteudo{
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+.testimonials__carousel {
+    width: 100vw;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}*/
+    scroll-snap-align: center;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    border: 1px solid red;
+    overflow-x: auto;
+}
 
-.containerCard {
+.testimonials__slide {
+    display: inline-flex;
+    gap: 10vw;
+}
+
+.testimonials__card {
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -525,22 +512,34 @@ Começo Marketing1*/
     text-align: justify-all;
 }
 
-#skateRolando {
-    margin-top: 5rem;
+.testimonials__slide > .testimonials__card:nth-child(1) {
+    margin-left: 10vw;
 }
 
-.imagemUsuario img {
+.testimonials__slide > .testimonials__card:last-child {
+    margin-right: 10vw;
+}
+
+.testimonials__user {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+.testimonials__user-image img {
     border-radius: 100px;
 }
 
-.dadosUsuario h5 {
+.testimonials__user-name {
     font-family: var(--title-font-family);
     font-size: calc(var(--font-size-paragraph) + 5px);
     font-weight: lighter;
     color: white;
 }
 
-.dadosUsuario p {
+.testimonials__user-handle {
     font-family: var(--title-font-family);
     font-size: calc(var(--font-size-paragraph) - 5px);
     background-color: #AE70EA;
@@ -549,40 +548,30 @@ Começo Marketing1*/
     text-align: center;
     font-weight: lighter;
     border-radius: 20px;
-}
-
-#redes-sociais-usuarios {
     position: relative;
     bottom: 5px;
 }
 
-.usuarioOpiniao {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 24px;
-}
-
-#estrelas-opinioes {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.avaliacoes {
+.testimonials__rating {
     display: flex;
     gap: 0.5rem;
     margin-top: 0.5em
 }
 
-#nota {
+.testimonials__score {
     color: white;
     font-size: 16px;
+    font-family: var(--title-font-family);
     line-height: 100%;
     background-color: black;
 }
 
-.descricaoOpiniao {
+.testimonials__stars {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.testimonials__text {
     overflow-y: hidden;
     color: white;
     font-family: var(--paragraph-font-family);
@@ -593,10 +582,8 @@ Começo Marketing1*/
     line-height: 140%;
 }
 
-
-/*Começo footer*/
-
-footer {
+/* ========== Footer ========== */
+.footer {
     height: 25vh;
     width: 100vw;
     border: 2px solid black;
@@ -605,7 +592,7 @@ footer {
     align-items: center;
 }
 
-.parte-roxa {
+.footer__purple-section {
     border-bottom: 2px solid black;
     height: 70%;
     width: 100%;
@@ -616,14 +603,14 @@ footer {
     align-items: center;
 }
 
-#footer-benjor-texto {
+.footer__logo {
     font-family: var(--display-logo-font-family);
     font-size: calc(var(--font-size-h6) + 4px);
     -webkit-text-stroke: 0.1px black;
     margin-bottom: 8px;
 }
 
-#container-redes-sociais {
+.footer__social {
     width: 50%;
     height: 30px;
     display: inline-flex;
@@ -632,14 +619,14 @@ footer {
     gap: 16px;
 }
 
-.item-redes-sociais {
+.footer__social-item {
     width: 24px;
     height: 24px;
     background-color: white;
     border-radius: 20px;
 }
 
-.footer-parte-branca{
+.footer__white-section {
     height: 30%;
     width: 100%;
     display: flex;
@@ -647,10 +634,9 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    border: 1px solid red;
 }
 
-#footer-parteBranca-termos {
+.footer__links {
     font-size: 8px;
     font-family: var(--paragraph-font-family);
     display: flex;
@@ -661,7 +647,7 @@ footer {
     font-weight: 500;
 }
 
-#footer-parteBranca-copyright{
+.footer__copyright {
     font-size: 8px;
     color: dimgrey;
 }
