@@ -9,45 +9,145 @@
 </head>
 <body>
 <header class="hero">
+    
     <div class="hero__content">
         <h1 class="hero__title">BENJOR</h1>
         <div class="hero__subtitle"><sub>skate todo dia</sub></div>
     </div>
     
-    <div class="hero__image-container hero__image-container--man-with-beanie">
-        <img src="resources/imgs/hero/homem-negro-com-skate-e-touca.jpg"
-             alt="Homem negro com uma touca"
-             class="hero__image">
-    </div>
-    
-    <div class="hero__image-container hero__image-container--old-school">
-        <img src="resources/imgs/hero/old-skool-skate.jpg"
-             alt="Foto de um skate e uma pessoa em cima mostrando apenas o tênis"
-             class="hero__image">
-    </div>
-    
-    <div class="hero__image-container hero__image-container--japanese-kid">
-        <img src="resources/imgs/hero/crianca-japonesa.jpg"
-             alt="Criança japonesa com roupas de skate"
-             class="hero__image">
-    </div>
-    
-    <div class="hero__image-container hero__image-container--man-at-park">
-        <img src="resources/imgs/hero/homem-na-pista-de-skate.jpg"
-             alt="Homem de jaqueta jeans e cabelos longos na pista de skate"
-             class="hero__image">
-    </div>
-    
-    <div class="hero__image-container hero__image-container--woman-posing">
-        <img src="resources/imgs/hero/mulher-pousando-para-a-foto-com-skate.jpg"
-             alt="Mulher posando para foto com skate"
-             class="hero__image">
-    </div>
-    
-    <div class="hero__image-container hero__image-container--youth-group">
-        <img src="resources/imgs/hero/jovens-com-skate.jpg"
-             alt="3 jovens na pista de skate"
-             class="hero__image">
+    <div class="hero__image-container">
+        
+        <div class="hero__image-container"
+             id="hero__image-container--homem-negro-com-skate-e-touca">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-size/homem-negro-com-skate-e-touca.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/homem-negro-com-skate-e-touca.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/homem-negro-com-skate-e-touca.jpg"
+                     class="hero__image"
+                     id="hero__image__homem-negro"
+                     alt="Homem negro com skate e touca">
+            </picture>
+        </div>
+        
+        <div class="hero__image-container"
+             id="hero__image-container--old-school">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-size/old-skool-skate.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/old-skool-skate.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/old-skool-skate.jpg"
+                     class="hero__image"
+                     id="hero__image__old-skool"
+                     alt="Foto de um skate e uma pessoa em cima mostrando apenas o tênis">
+            </picture>
+        </div>
+        
+        <div class="hero__image-container"
+             id="hero__image-container--crianca-japonesa">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-s  ize/crianca-japonesa.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/crianca-japonesa.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/crianca-japonesa.jpg"
+                     class="hero__image"
+                     id="hero__image__crianca-japonesa"
+                     alt="Criança japonesa com roupas de skate">
+            </picture>
+        </div>
+        
+        <div class="hero__image-container"
+             id="hero__image-container--homem-na-pista">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-size/homem-na-pista-de-skate.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/homem-na-pista-de-skate.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/homem-na-pista-de-skate.jpg"
+                     class="hero__image"
+                     id="hero__image__homem-na-pista"
+                     alt="Homem de jaqueta jeans e cabelos longos na pista de skate">
+            </picture>
+        </div>
+        
+        <div class="hero__image-container"
+             id="hero__image-container--mulher-posando">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-size/mulher-pousando-para-a-foto-com-skate.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/mulher-pousando-para-a-foto-com-skate.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/mulher-pousando-para-a-foto-com-skate.jpg"
+                     class="hero__image"
+                     id="hero__image__mulher-posando"
+                     alt="Mulher posando para foto com skate">
+            </picture>
+        </div>
+        
+        <div class="hero__image-container"
+             id="hero__image-container--jovens-grupo">
+            
+            <picture>
+                <!-- Versão pequena em WebP -->
+                <source media="(max-width: 480px)"
+                        srcset="resources/imgs/hero/small-size/jovens-com-skate.webp"
+                        type="image/webp">
+                
+                <!-- Versão média em WebP -->
+                <source media="(max-width: 768px)"
+                        srcset="resources/imgs/hero/medium-size/jovens-com-skate.webp"
+                        type="image/webp">
+                
+                <!-- Fallback em JPG -->
+                <img src="resources/imgs/hero/jovens-com-skate.jpg"
+                     class="hero__image"
+                     id="hero__image__jovens-grupo"
+                     alt="3 jovens na pista de skate">
+            </picture>
+        </div>
     </div>
 </header>
 
@@ -107,8 +207,10 @@
 
 <section class="marketing marketing--first">
     <div class="marketing__content">
-        <img src="resources/imgs/Marketing/coracoes.gif" alt="Corações animados" class="marketing__gif marketing__gif--hearts">
-        <img src="resources/imgs/Marketing/estrelas.gif" alt="Estrelas animadas" class="marketing__gif marketing__gif--stars">
+        <img src="resources/imgs/Marketing/coracoes.gif" alt="Corações animados"
+             class="marketing__gif marketing__gif--hearts">
+        <img src="resources/imgs/Marketing/estrelas.gif" alt="Estrelas animadas"
+             class="marketing__gif marketing__gif--stars">
         <div class="marketing__phrase">TODO DIA É DIA DE ANDAR DE SKATE!</div>
         <div class="marketing__animation">
             <div class="marketing__skate-gif"></div>
@@ -152,19 +254,24 @@
                             <p class="testimonials__score">5.0</p>
                             <div class="testimonials__stars">
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                             </div>
                         </div>
@@ -191,97 +298,24 @@
                             <p class="testimonials__score">5.0</p>
                             <div class="testimonials__stars">
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonials__text">
-                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
-                </div>
-            </div>
-           
-            <div class="testimonials__card">
-                <div class="testimonials__user">
-                    <div class="testimonials__user-image">
-                        <img src="resources/imgs/opinioes/homembispo.png"
-                             alt="Foto do usuário"
-                             height="80"
-                             width="80"/>
-                    </div>
-                    
-                    <div class="testimonials__user-info">
-                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
-                        <p class="testimonials__user-handle">@bisparel</p>
-                        <div class="testimonials__rating">
-                            <p class="testimonials__score">5.0</p>
-                            <div class="testimonials__stars">
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonials__text">
-                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
-                </div>
-            </div>
-
-            <div class="testimonials__card">
-                <div class="testimonials__user">
-                    <div class="testimonials__user-image">
-                        <img src="resources/imgs/opinioes/homembispo.png"
-                             alt="Foto do usuário"
-                             height="80"
-                             width="80"/>
-                    </div>
-                    
-                    <div class="testimonials__user-info">
-                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
-                        <p class="testimonials__user-handle">@bisparel</p>
-                        <div class="testimonials__rating">
-                            <p class="testimonials__score">5.0</p>
-                            <div class="testimonials__stars">
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
-                                </div>
-                                <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                             </div>
                         </div>
@@ -308,19 +342,24 @@
                             <p class="testimonials__score">5.0</p>
                             <div class="testimonials__stars">
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                             </div>
                         </div>
@@ -347,19 +386,24 @@
                             <p class="testimonials__score">5.0</p>
                             <div class="testimonials__stars">
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                                 <div class="testimonials__star">
-                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px" alt="Estrela">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
                                 </div>
                             </div>
                         </div>
@@ -370,9 +414,95 @@
                 </div>
             </div>
             
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
             
-            
-            
+            <div class="testimonials__card">
+                <div class="testimonials__user">
+                    <div class="testimonials__user-image">
+                        <img src="resources/imgs/opinioes/homembispo.png"
+                             alt="Foto do usuário"
+                             height="80"
+                             width="80"/>
+                    </div>
+                    
+                    <div class="testimonials__user-info">
+                        <h5 class="testimonials__user-name">Gabriel Bispo</h5>
+                        <p class="testimonials__user-handle">@bisparel</p>
+                        <div class="testimonials__rating">
+                            <p class="testimonials__score">5.0</p>
+                            <div class="testimonials__stars">
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                                <div class="testimonials__star">
+                                    <img src="resources/imgs/opinioes/estrela.svg" height="16px" width="16px"
+                                         alt="Estrela">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    Muito bom mesmo! <br>Show, irado, radical, gostei bastante. Recomendo para geral.
+                </div>
+            </div>
+        
+        
         </div>
     </div>
 </section>
