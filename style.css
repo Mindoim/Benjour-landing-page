@@ -105,41 +105,78 @@ body {
 
 .hero__image-container {
     position: absolute;
+    width: 100vw;
+    max-width: 100vw;
+    top: 0;
+    /*overflow-x: hidden;*/
 }
 
+.hero__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    position: relative;
+}
 
-.hero__image-container--man-with-beanie {
+#hero__image-container--homem-negro-com-skate-e-touca {
     width: 200px;
     height: 200px;
+    top: 110vh;
+    left: 0;
+    animation: subirVerticalmente 4s ease-in-out forwards;
 }
 
-.animacaoMovendoFotoDoHomemNegro {
-    animation: movingHomemNegro 2.5s ease-in forwards;
+#hero__image-container--old-school {
+    width: 50vw;
+    left: 0;
+    top: 300vh;
+    animation: subirVerticalmente 6s ease-in-out forwards;
 }
 
-@keyframes movingHomemNegro {
-    0% {
-        left: 0;
-        bottom: -300px;
-    }
-    99% {
-        bottom: 1000px;
-    }
-    100% {
-        bottom: 1000px;
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-.hero__image-container--old-school {
-    width: 250px;
-    bottom: 0;
+#hero__image-container--crianca-japonesa {
+    width: 50vw;
     right: 0;
+    top: 150vh;
+    animation: subirVerticalmente 4s ease-in-out forwards;
 }
+
+#hero__image-container--homem-na-pista {
+    width: 200px;
+    right: 0;
+    top: 230vh;
+    animation: subirVerticalmente 4s ease-in-out forwards;
+}
+
+#hero__image__mulher-posando {
+    width: 50vw;
+    left: 0;
+    top: 190vh;
+    animation: subirVerticalmente 4s ease-in-out forwards;
+}
+
+#hero__image__jovens-grupo {
+    width: 60vw;
+    top: 270vh;
+    left: 0;
+    animation: subirVerticalmente 4s ease-in-out forwards;
+}
+
+
+@keyframes subirVerticalmente {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-200vh);
+        opacity: 0;
+    }
+}
+
 
 .animacaoMovendoFotoDoOldSkool {
-    animation: movingOldSkool 4s ease-in forwards;
+    animation: movingOldSkool 4s forwards;
 }
 
 @keyframes movingOldSkool {
@@ -156,11 +193,6 @@ body {
     }
 }
 
-.hero__image-container--japanese-kid {
-    width: 200px;
-    bottom: -400px;
-    right: 0;
-}
 
 .animacaoMovendoFotoDaCriancaJaponesa {
     animation: movingCriancaJaponesa 3.8s ease-in forwards;
@@ -179,11 +211,6 @@ body {
     }
 }
 
-.hero__image-container--man-at-park {
-    width: 200px;
-    bottom: -600px;
-    right: 0;
-}
 
 .animacaoMovendoFotoDoHomemNaPistaDeSkate {
     animation: movingHomemPista 7s ease forwards;
@@ -202,12 +229,6 @@ body {
     }
 }
 
-.hero__image-container--woman-posing {
-    width: 150px;
-    bottom: -500px;
-    right: auto;
-    left: 0;
-}
 
 .animacaoMovendoFotoDaMulher {
     animation: movingMulher 7.6s ease forwards;
@@ -226,11 +247,6 @@ body {
     }
 }
 
-.hero__image-container--youth-group {
-    width: 250px;
-    bottom: -1500px;
-    left: 0;
-}
 
 .animacaoMovendoFotoDosJovensNaPistaDeSkate {
     animation: movingJovens 5.6s ease forwards;
@@ -252,26 +268,39 @@ body {
 /* ========== Produtos ========== */
 .products {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-start;
     height: auto;
     gap: 32px;
     margin: 20px 0;
+    width: 100vw;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    border: 1px solid red;
+    overflow-x: auto;
 }
+
+.product__slider {
+    display: inline-flex;
+    gap: 10vw;
+}
+
 
 .products__item {
     border: 1px solid black;
-    width: 90%;
     padding: 0 2rem;
     height: 75vh;
     background-color: var(--second-background-color);
+    scroll-snap-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 16px;
+    align-items: center;
+    width: 80vw;
+    margin-top: 5rem;
+    gap: 32px;
+    text-align: justify-all;
 }
 
 .products__image {
@@ -341,10 +370,6 @@ body {
     margin-top: 12px;
 }
 
-#product-1 {
-    margin-top: 32px;
-    box-shadow: 430px 1225px 250px 0px rgba(184, 6, 234, 0.00), 275px 784px 250px 0px rgba(184, 6, 234, 0.02), 155px 441px 250px 0px rgba(184, 6, 234, 0.06), 69px 196px 208px 0px rgba(184, 6, 234, 0.10), 17px 49px 114px 0px rgba(184, 6, 234, 0.12);
-}
 
 #product-2 {
     box-shadow: -2079px 2688px 250px 0px rgba(143, 32, 254, 0.00), -1331px 1720px 250px 0px rgba(143, 32, 254, 0.03), -748px 968px 250px 0px rgba(143, 32, 254, 0.10), -333px 430px 250px 0px rgba(143, 32, 254, 0.16), -83px 108px 250px 0px rgba(143, 32, 254, 0.19);
